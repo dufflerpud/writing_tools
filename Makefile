@@ -35,6 +35,8 @@
 ########################################################################
 #doc#	Makefile - Build the writing tools
 ########################################################################
+NO_LOGIN=1
+NO_DATABASE=1
 PROJECTSDIR?=$(shell echo $(CURDIR) | sed -e 's+/projects/.*+/projects+')
 PROGRAMS=story_xml
 include $(PROJECTSDIR)/common/Makefile.std
